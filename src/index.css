@@ -6,9 +6,20 @@ body {
   background-color: hsl(225, 6%, 25%);
 }
 
-.pane {
-  height: 50vh;
+.cont{
   display: flex;
+  height: 100vh;
+}
+
+.pane {
+  /* height: 50vh; */
+  display: flex;
+  width: 100%;
+}
+
+.top-pane{
+  display: flex;
+  flex-direction: column;
 }
 
 .editor-container {
@@ -17,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: .5rem;
-  background-color: hsl(225, 6%, 25%);
+  background-color: #252526;
 }
 
 .editor-container.collapsed {
@@ -40,7 +51,7 @@ body {
 .editor-title {
   display: flex;
   justify-content: space-between;
-  background-color: hsl(225, 6%, 13%);
+  background-color: #2D2D2D;
   color: white;
   padding: .5rem .5rem .5rem 1rem;
   border-top-right-radius: .5rem;
@@ -49,6 +60,7 @@ body {
 
 .CodeMirror {
   height: 100% !important;
+
 }
 
 .code-mirror-wrapper {
@@ -56,4 +68,13 @@ body {
   border-bottom-right-radius: .5rem;
   border-bottom-left-radius: .5rem;
   overflow: hidden;
+}
+
+.cm-s-material.CodeMirror {
+  background-color: #1E1E1E !important;
+  color: #EEFFFF;
+}
+
+.cm-s-material .CodeMirror-gutters {
+  background-color: #2D2D2D !important;
 }

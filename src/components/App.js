@@ -31,6 +31,8 @@ function App() {
 
   return (
     <>
+    <div className="cont">
+
       <div className="pane top-pane">
         <Editor
           language="xml"
@@ -65,6 +67,7 @@ function App() {
           height="100%"
         />
       </div>
+    </div> 
     </>
   )
 }
