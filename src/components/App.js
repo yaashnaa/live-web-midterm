@@ -6,7 +6,7 @@ import { io } from 'socket.io-client'; // Import the socket.io-client library
 
 
 
-function Finished() {
+function App() {
   const [html, setHtml] = useLocalStorage('html', '')
   const [css, setCss] = useLocalStorage('css', '')
   const [js, setJs] = useLocalStorage('js', '')
@@ -23,10 +23,11 @@ function Finished() {
           <script>${js}</script>
         </html>
       `)
-    }, 250);
+    }, 150);
   
     return () => clearTimeout(timeout);
   }, [html, css, js]);
+
 
   return (
     <>
@@ -68,4 +69,4 @@ function Finished() {
   )
 }
 
-export default Finished;
+export default App;
